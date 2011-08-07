@@ -1,0 +1,61 @@
+<gui>
+  <properties>
+    <project>Animated Button Demo</project>
+    <designer>CommandFusion</designer>
+    <size>
+      <portrait width="320" height="480" />
+      <landscape width="480" height="320" />
+    </size>
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+  </properties>
+  <themes>
+    <theme type="button" name=".btn[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_blue.png); text-shadow: rgba(0,0,0,1) 0px 1px 1px; color: White; font-size: 16px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_green.png); text-shadow: rgba(0,0,0,1) 0px 1px 1px; color: White; font-size: 16px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".rnd[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_rnd_blue.png); text-shadow: rgba(0,0,0,1) 0px 1px 0px; color: White; font-size: 14px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".rnd[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_rnd_green.png); text-shadow: rgba(255,255,255,0.78) 0px 1px 0px; color: Black; font-size: 14px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="buttonanim.js" />
+  </scripts>
+  <page name="Startup" j="0" transition="" subtype="" time="0" ease="">
+    <portrait>
+      <img x="85" y="128" w="150" h="50" j="1" clickthrough="1" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">btn_border_white.png</img>
+      <btn j="1" x="85" y="128" w="150" h="50" t="btn" flip="None" sim="1" l="0" s="1" js="Anims.imagePulse(join)">
+        <inactive s="0">Press Me!</inactive>
+        <active s="0">Press Me!</active>
+      </btn>
+      <img x="55" y="180" w="100" h="100" j="2" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">btn_rnd_white.png</img>
+      <btn j="2" x="55" y="180" w="100" h="100" t="rnd" flip="None" sim="1" l="0" s="1" js="Anims.imagePulse(join, 100, 0.3)">
+        <inactive s="0">Press
+Me!</inactive>
+        <active s="0">Press
+Me!</active>
+      </btn>
+      <img x="165" y="180" w="100" h="100" j="3" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">btn_rnd_white.png</img>
+      <btn j="3" x="165" y="180" w="100" h="100" t="rnd" flip="None" sim="1" l="0" s="1" js="Anims.imagePulse(join, 200)">
+        <inactive s="0">Press
+Me!</inactive>
+        <active s="0">Press
+Me!</active>
+      </btn>
+      <img x="110" y="260" w="100" h="100" j="4" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">btn_rnd_white.png</img>
+      <btn j="4" x="110" y="260" w="100" h="100" t="rnd" flip="None" sim="1" l="0" s="1" js="Anims.imagePulse(join, 400)">
+        <inactive s="0">Press
+Me!</inactive>
+        <active s="0">Press
+Me!</active>
+      </btn>
+      <btn j="5" x="85" y="38" w="150" h="50" t="btn" flip="None" sim="1" l="0" s="1" js="Anims.bulge(join)">
+        <inactive s="0">Bulge!</inactive>
+        <active s="0">Bulge!</active>
+      </btn>
+      <btn j="6" x="110" y="360" w="100" h="100" t="rnd" flip="None" sim="1" l="0" s="1" js="Anims.bounce(join)">
+        <inactive s="0">Bounce!</inactive>
+        <active s="0">Bounce!</active>
+      </btn>
+    </portrait>
+    <landscape />
+  </page>
+</gui>
